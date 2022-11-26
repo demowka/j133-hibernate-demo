@@ -3,10 +3,9 @@ package pl.sda.hibernate.demo;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import java.io.IOException;
 import java.time.LocalDate;
 
-public class MAIN {
+public class MainInsert {
     public static void main(String[] args) {
         // wywołaj try-with-resources który zamknie sesję automatycznie po opuszczeniu try
         try (Session session = HibernateUtil.INSTANCE.getSessionFactory().openSession()) {
@@ -25,7 +24,7 @@ public class MAIN {
                     .indeks("123123")
                     .imie("Pawel")
                     .build();
-
+            //SQL INSERT INTO 'student' va;ues (...)
             //zapisujemy studenta
             session.persist(student);
 
