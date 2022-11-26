@@ -1,6 +1,8 @@
 package pl.sda.hibernate.demo;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -8,7 +10,9 @@ import java.time.LocalDate;
 
 @Data
 @Entity
+@Builder
 @NoArgsConstructor
+@AllArgsConstructor
 public class Student {
     @Id // primary key
     @GeneratedValue(strategy = GenerationType.IDENTITY) //auto increment
