@@ -19,8 +19,8 @@ public class Student {
     private  Long id;                                   //ID INT PRIMARY KEY AUTO INCREMENT
 
     @Column(nullable = false)
-    private  String imie;                                       //imie VARCHAR 255
-    private LocalDate dataUrodzenia;                          //DATA UR DATE
+    private  String imie;                                   //imie VARCHAR 255
+    private LocalDate dataUrodzenia;                        //DATA UR DATE
     private  String kierunekNauczania;                      //KIER N VARCHAR 255
     private  String indeks;                                 // INDEKS VARCHAR 255
 
